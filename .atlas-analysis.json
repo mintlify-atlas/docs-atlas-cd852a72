@@ -1,0 +1,83 @@
+{
+  "projectType": "saas",
+  "projectName": "Sistema de Biblioteca Andrés Manjón",
+  "projectDescription": "Sistema de gestión de biblioteca escolar con interfaces diferenciadas por roles para alumnos, profesores y administradores",
+  "theme": "almond",
+  "primaryColor": "#1a4b8c",
+  "lightColor": "#f0f4f8",
+  "darkColor": "#1e293b",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentación",
+        "groups": [
+          {
+            "group": "Inicio",
+            "pages": ["introduction", "quickstart"]
+          },
+          {
+            "group": "Arquitectura",
+            "pages": ["architecture/overview", "architecture/database", "architecture/roles"]
+          },
+          {
+            "group": "Guías de Usuario",
+            "pages": [
+              "guides/admin",
+              "guides/profesor",
+              "guides/estudiante"
+            ]
+          },
+          {
+            "group": "Funcionalidades",
+            "pages": [
+              "features/catalog",
+              "features/loans",
+              "features/users",
+              "features/search",
+              "features/statistics"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Desarrollo",
+        "groups": [
+          {
+            "group": "Configuración",
+            "pages": ["development/setup", "development/environment", "development/database-setup"]
+          },
+          {
+            "group": "Referencia Técnica",
+            "pages": [
+              "reference/file-structure",
+              "reference/color-system",
+              "reference/authentication"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Gestión de catálogo de libros con sistema de colores",
+    "Control de préstamos y devoluciones",
+    "Interfaces diferenciadas por roles (Admin, Profesor, Estudiante)",
+    "Sistema de búsqueda multi-criterio",
+    "Estadísticas de uso de biblioteca",
+    "Gestión de usuarios por clase escolar",
+    "Base de datos SQLite portátil",
+    "Modo invitado para estudiantes de infantil"
+  ],
+  "publicApiSurface": [
+    "admin.php - Panel de administración del catálogo",
+    "profesor.php - Panel de profesor para préstamos",
+    "estudiante_mayor.php - Interfaz para alumnos de primaria alta",
+    "estudiante_pequeno.php - Interfaz simplificada para infantil",
+    "admin-usuarios.php - Gestión de usuarios",
+    "admin-prestamos.php - Gestión de préstamos",
+    "admin-estadisticas.php - Estadísticas del sistema",
+    "profesor-prestamo.php - Realizar préstamos",
+    "profesor-devolucion.php - Gestión de devoluciones",
+    "biblioteca.db - Base de datos SQLite"
+  ]
+}
